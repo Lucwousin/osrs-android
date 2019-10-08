@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="expand_duration">400</integer>
+    <integer name="package_collapse_duration">800</integer>
+    <integer name="package_list_load_delay">300</integer>
+</resources>

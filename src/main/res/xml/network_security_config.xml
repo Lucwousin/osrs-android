@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <base-config>
+        <trust-anchors>
+            <certificates overridePins="true" src="system"/>
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">jagex.network
+        </domain>
+        <domain includeSubdomains="true">jagex.com
+        </domain>
+        <domain includeSubdomains="true">runescape.com
+        </domain>
+        <pin-set>
+            <pin digest="SHA-256">0C58jZAJ0Lq7kp7OQc4ZPOzMHagMqYX0aJHPzKge6oQ=
+            </pin>
+        </pin-set>
+        <trust-anchors>
+            <certificates overridePins="false" src="user"/>
+            <certificates overridePins="true" src="system"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

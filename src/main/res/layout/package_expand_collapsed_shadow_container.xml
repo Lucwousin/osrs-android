@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardElevation="10dp" app:cardUseCompatPadding="false">
+    <include layout="@layout/package_expand_collapsed"/>
+</androidx.cardview.widget.CardView>

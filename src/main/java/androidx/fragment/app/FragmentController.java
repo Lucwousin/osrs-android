@@ -1,0 +1,184 @@
+package androidx.fragment.app;
+
+import android.content.Context;
+import android.content.res.Configuration;
+import android.os.Parcelable;
+import android.util.AttributeSet;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import androidx.annotation.Nullable;
+import androidx.collection.SimpleArrayMap;
+import androidx.loader.app.LoaderManager;
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+import java.util.List;
+
+public class FragmentController {
+    private final FragmentHostCallback mHost;
+
+    private FragmentController(FragmentHostCallback arg1) {
+        super();
+        this.mHost = arg1;
+    }
+
+    public void attachHost(Fragment arg4) {
+        this.mHost.mFragmentManager.attachController(this.mHost, this.mHost, arg4);
+    }
+
+    public static FragmentController createController(FragmentHostCallback arg1) {
+        return new FragmentController(arg1);
+    }
+
+    public void dispatchActivityCreated() {
+        this.mHost.mFragmentManager.dispatchActivityCreated();
+    }
+
+    public void dispatchConfigurationChanged(Configuration arg2) {
+        this.mHost.mFragmentManager.dispatchConfigurationChanged(arg2);
+    }
+
+    public boolean dispatchContextItemSelected(MenuItem arg2) {
+        return this.mHost.mFragmentManager.dispatchContextItemSelected(arg2);
+    }
+
+    public void dispatchCreate() {
+        this.mHost.mFragmentManager.dispatchCreate();
+    }
+
+    public boolean dispatchCreateOptionsMenu(Menu arg2, MenuInflater arg3) {
+        return this.mHost.mFragmentManager.dispatchCreateOptionsMenu(arg2, arg3);
+    }
+
+    public void dispatchDestroy() {
+        this.mHost.mFragmentManager.dispatchDestroy();
+    }
+
+    public void dispatchDestroyView() {
+        this.mHost.mFragmentManager.dispatchDestroyView();
+    }
+
+    public void dispatchLowMemory() {
+        this.mHost.mFragmentManager.dispatchLowMemory();
+    }
+
+    public void dispatchMultiWindowModeChanged(boolean arg2) {
+        this.mHost.mFragmentManager.dispatchMultiWindowModeChanged(arg2);
+    }
+
+    public boolean dispatchOptionsItemSelected(MenuItem arg2) {
+        return this.mHost.mFragmentManager.dispatchOptionsItemSelected(arg2);
+    }
+
+    public void dispatchOptionsMenuClosed(Menu arg2) {
+        this.mHost.mFragmentManager.dispatchOptionsMenuClosed(arg2);
+    }
+
+    public void dispatchPause() {
+        this.mHost.mFragmentManager.dispatchPause();
+    }
+
+    public void dispatchPictureInPictureModeChanged(boolean arg2) {
+        this.mHost.mFragmentManager.dispatchPictureInPictureModeChanged(arg2);
+    }
+
+    public boolean dispatchPrepareOptionsMenu(Menu arg2) {
+        return this.mHost.mFragmentManager.dispatchPrepareOptionsMenu(arg2);
+    }
+
+    @Deprecated public void dispatchReallyStop() {
+    }
+
+    public void dispatchResume() {
+        this.mHost.mFragmentManager.dispatchResume();
+    }
+
+    public void dispatchStart() {
+        this.mHost.mFragmentManager.dispatchStart();
+    }
+
+    public void dispatchStop() {
+        this.mHost.mFragmentManager.dispatchStop();
+    }
+
+    @Deprecated public void doLoaderDestroy() {
+    }
+
+    @Deprecated public void doLoaderRetain() {
+    }
+
+    @Deprecated public void doLoaderStart() {
+    }
+
+    @Deprecated public void doLoaderStop(boolean arg1) {
+    }
+
+    @Deprecated public void dumpLoaders(String arg1, FileDescriptor arg2, PrintWriter arg3, String[] arg4) {
+    }
+
+    public boolean execPendingActions() {
+        return this.mHost.mFragmentManager.execPendingActions();
+    }
+
+    @Nullable public Fragment findFragmentByWho(String arg2) {
+        return this.mHost.mFragmentManager.findFragmentByWho(arg2);
+    }
+
+    public List getActiveFragments(List arg1) {
+        return this.mHost.mFragmentManager.getActiveFragments();
+    }
+
+    public int getActiveFragmentsCount() {
+        return this.mHost.mFragmentManager.getActiveFragmentCount();
+    }
+
+    public FragmentManager getSupportFragmentManager() {
+        return this.mHost.getFragmentManagerImpl();
+    }
+
+    @Deprecated public LoaderManager getSupportLoaderManager() {
+        throw new UnsupportedOperationException("Loaders are managed separately from FragmentController, use LoaderManager.getInstance() to obtain a LoaderManager.");
+    }
+
+    public void noteStateNotSaved() {
+        this.mHost.mFragmentManager.noteStateNotSaved();
+    }
+
+    public View onCreateView(View arg2, String arg3, Context arg4, AttributeSet arg5) {
+        return this.mHost.mFragmentManager.onCreateView(arg2, arg3, arg4, arg5);
+    }
+
+    @Deprecated public void reportLoaderStart() {
+    }
+
+    public void restoreAllState(Parcelable arg2, FragmentManagerNonConfig arg3) {
+        this.mHost.mFragmentManager.restoreAllState(arg2, arg3);
+    }
+
+    @Deprecated public void restoreAllState(Parcelable arg4, List arg5) {
+        this.mHost.mFragmentManager.restoreAllState(arg4, new FragmentManagerNonConfig(arg5, null, null));
+    }
+
+    @Deprecated public void restoreLoaderNonConfig(SimpleArrayMap arg1) {
+    }
+
+    @Deprecated public SimpleArrayMap retainLoaderNonConfig() {
+        return null;
+    }
+
+    public FragmentManagerNonConfig retainNestedNonConfig() {
+        return this.mHost.mFragmentManager.retainNonConfig();
+    }
+
+    @Deprecated public List retainNonConfig() {
+        FragmentManagerNonConfig v0 = this.mHost.mFragmentManager.retainNonConfig();
+        List v0_1 = v0 != null ? v0.getFragments() : null;
+        return v0_1;
+    }
+
+    public Parcelable saveAllState() {
+        return this.mHost.mFragmentManager.saveAllState();
+    }
+}
+

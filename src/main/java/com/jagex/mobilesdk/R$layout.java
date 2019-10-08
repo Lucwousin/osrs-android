@@ -1,0 +1,84 @@
+package com.jagex.mobilesdk;
+
+public final class R$layout {
+    public static final int abc_action_bar_title_item = 0x7F0B0000;
+    public static final int abc_action_bar_up_container = 0x7F0B0001;
+    public static final int abc_action_menu_item_layout = 0x7F0B0002;
+    public static final int abc_action_menu_layout = 0x7F0B0003;
+    public static final int abc_action_mode_bar = 0x7F0B0004;
+    public static final int abc_action_mode_close_item_material = 0x7F0B0005;
+    public static final int abc_activity_chooser_view = 0x7F0B0006;
+    public static final int abc_activity_chooser_view_list_item = 0x7F0B0007;
+    public static final int abc_alert_dialog_button_bar_material = 0x7F0B0008;
+    public static final int abc_alert_dialog_material = 0x7F0B0009;
+    public static final int abc_alert_dialog_title_material = 0x7F0B000A;
+    public static final int abc_cascading_menu_item_layout = 0x7F0B000B;
+    public static final int abc_dialog_title_material = 0x7F0B000C;
+    public static final int abc_expanded_menu_layout = 0x7F0B000D;
+    public static final int abc_list_menu_item_checkbox = 0x7F0B000E;
+    public static final int abc_list_menu_item_icon = 0x7F0B000F;
+    public static final int abc_list_menu_item_layout = 0x7F0B0010;
+    public static final int abc_list_menu_item_radio = 0x7F0B0011;
+    public static final int abc_popup_menu_header_item_layout = 0x7F0B0012;
+    public static final int abc_popup_menu_item_layout = 0x7F0B0013;
+    public static final int abc_screen_content_include = 0x7F0B0014;
+    public static final int abc_screen_simple = 0x7F0B0015;
+    public static final int abc_screen_simple_overlay_action_mode = 0x7F0B0016;
+    public static final int abc_screen_toolbar = 0x7F0B0017;
+    public static final int abc_search_dropdown_item_icons_2line = 0x7F0B0018;
+    public static final int abc_search_view = 0x7F0B0019;
+    public static final int abc_select_dialog_material = 0x7F0B001A;
+    public static final int abc_tooltip = 0x7F0B001B;
+    public static final int activity_login = 0x7F0B001C;
+    public static final int activity_store = 0x7F0B001D;
+    public static final int browser_actions_context_menu_page = 0x7F0B001E;
+    public static final int browser_actions_context_menu_row = 0x7F0B001F;
+    public static final int collapsed_details_container = 0x7F0B0020;
+    public static final int design_bottom_navigation_item = 0x7F0B0021;
+    public static final int design_bottom_sheet_dialog = 0x7F0B0022;
+    public static final int design_layout_snackbar = 0x7F0B0023;
+    public static final int design_layout_snackbar_include = 0x7F0B0024;
+    public static final int design_layout_tab_icon = 0x7F0B0025;
+    public static final int design_layout_tab_text = 0x7F0B0026;
+    public static final int design_menu_item_action_area = 0x7F0B0027;
+    public static final int design_navigation_item = 0x7F0B0028;
+    public static final int design_navigation_item_header = 0x7F0B0029;
+    public static final int design_navigation_item_separator = 0x7F0B002A;
+    public static final int design_navigation_item_subheader = 0x7F0B002B;
+    public static final int design_navigation_menu = 0x7F0B002C;
+    public static final int design_navigation_menu_item = 0x7F0B002D;
+    public static final int design_text_input_password_icon = 0x7F0B002E;
+    public static final int fragment_package = 0x7F0B002F;
+    public static final int fragment_package_items_list = 0x7F0B0030;
+    public static final int fragment_package_list = 0x7F0B0031;
+    public static final int mtrl_layout_snackbar = 0x7F0B0032;
+    public static final int mtrl_layout_snackbar_include = 0x7F0B0033;
+    public static final int notification_action = 0x7F0B0034;
+    public static final int notification_action_tombstone = 0x7F0B0035;
+    public static final int notification_media_action = 0x7F0B0036;
+    public static final int notification_media_cancel_action = 0x7F0B0037;
+    public static final int notification_template_big_media = 0x7F0B0038;
+    public static final int notification_template_big_media_custom = 0x7F0B0039;
+    public static final int notification_template_big_media_narrow = 0x7F0B003A;
+    public static final int notification_template_big_media_narrow_custom = 0x7F0B003B;
+    public static final int notification_template_custom_big = 0x7F0B003C;
+    public static final int notification_template_icon_group = 0x7F0B003D;
+    public static final int notification_template_lines_media = 0x7F0B003E;
+    public static final int notification_template_media = 0x7F0B003F;
+    public static final int notification_template_media_custom = 0x7F0B0040;
+    public static final int notification_template_part_chronometer = 0x7F0B0041;
+    public static final int notification_template_part_time = 0x7F0B0042;
+    public static final int package_expand_collapsed = 0x7F0B0043;
+    public static final int package_expand_collapsed_shadow_container = 0x7F0B0044;
+    public static final int package_item = 0x7F0B0045;
+    public static final int package_more_items = 0x7F0B0046;
+    public static final int select_dialog_item_material = 0x7F0B0047;
+    public static final int select_dialog_multichoice_material = 0x7F0B0048;
+    public static final int select_dialog_singlechoice_material = 0x7F0B0049;
+    public static final int support_simple_spinner_dropdown_item = 0x7F0B004A;
+
+    R$layout() {
+        super();
+    }
+}
+
